@@ -2,9 +2,10 @@
   "name": "backend-server",
   "version": "1.0.0",
   "description": "Servidor backend - Sistema de Tejidos",
-  "main": "index.js",
+  "main": "./src/index.js",
   "type": "module",
   "scripts": {
+	"start": "node ./src/index.js",
     "dev": "nodemon ./src/index.js"
   },
   "author": "proyectosw",

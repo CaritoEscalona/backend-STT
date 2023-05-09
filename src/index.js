@@ -17,8 +17,8 @@ async function start(){
         await sequelize.sync();
         
         console.log("Conexión establecida con la base de datos");
-        app.listen(5000, ()=>{
-            console.log("Server has started on port 5000");
+        app.listen(process.env.PORT | 5000, ()=>{
+		console.log(`Server has started on port ${process.env.PORT | 5000}`);
         });
     } catch (error) {
         console.log("No se pudo conectar con la base de datos: ", error);
